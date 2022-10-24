@@ -119,5 +119,6 @@ public class DLLNode {
             System.out.println(firstNode.getData());
             firstNode = firstNode.getNext();
         }
+        System.out.println("------------------------");
     }
 }

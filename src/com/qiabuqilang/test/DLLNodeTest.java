@@ -24,15 +24,13 @@ public class DLLNodeTest {
         }
         DLLNode currentNode = dllNodes[2];
         currentNode.printDLLNode(currentNode);
-        System.out.println("------------------------");
+
         // test add
         DLLNode insert7 = new DLLNode(7);
         currentNode.DLLInsert(currentNode,insert7,3);
         currentNode.printDLLNode(currentNode);
-        System.out.println("------------------------");
         // test remove
         currentNode.DLLDelete(currentNode,2);
         currentNode.printDLLNode(currentNode);
-        System.out.println("------------------------");
     }
 }

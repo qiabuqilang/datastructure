@@ -23,7 +23,7 @@ public class ListNode {
         return this.next;
     }
 
-    int ListLength(ListNode headNode){
+    private int ListLength(ListNode headNode){
         int length = 0;
         ListNode currentNode = headNode;
         while(currentNode != null){
@@ -33,7 +33,7 @@ public class ListNode {
         return length;
     }
 
-    ListNode InserInLinkedList(ListNode headNode,ListNode nodeToInsert,int position){
+    public ListNode inserInLinkedList(ListNode headNode,ListNode nodeToInsert,int position){
         if(headNode == null){
             return nodeToInsert;
         }
@@ -60,7 +60,7 @@ public class ListNode {
         return headNode;
     }
 
-    ListNode DeleteNodeFromLinkedList(ListNode headNode,int position){
+   public ListNode deleteNodeFromLinkedList(ListNode headNode,int position){
         int size = ListLength(headNode);
         if(position > size + 1 || position < 1){
             System.out.println("Position of node to insert is invalid.The valid inputs are 1 to"+(size +1));
@@ -73,7 +73,7 @@ public class ListNode {
         }else{
             ListNode previousNode = headNode;
             int count = 1;
-            while(count < position){
+            while(count < position -1){
                 previousNode = previousNode.getNext();
                 count++;
             }
@@ -92,5 +92,13 @@ public class ListNode {
             iterator = null;
             iterator = auxilaryNode;
         }
+    }
+    // listnode can't find headNode by any other node
+    public void printListNode(ListNode currentNode){
+        while(currentNode != null){
+            System.out.println(currentNode.getData());
+            currentNode = currentNode.getNext();
+        }
+        System.out.println("------------------------");
     }
 }
