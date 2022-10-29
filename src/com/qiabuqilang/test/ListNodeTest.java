@@ -27,5 +27,8 @@ public class ListNodeTest {
         // test remove
         currentNode.deleteNodeFromLinkedList(currentNode,3);
         currentNode.printListNode(currentNode);
+
+        ListNode l1 = new ListNode();
+        System.out.println(l1.getData());
     }
 }
