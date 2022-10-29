@@ -1,5 +1,7 @@
 package com.qiabuqilang;
 
+import java.util.EmptyStackException;
+
 public class DynArrayStack {
     private int top;
     private int capacity;
@@ -17,17 +19,18 @@ public class DynArrayStack {
     }
     public void push(int data){
         if(isStackFull()){
-            System.out.println("stack fll");
+            System.out.println("stack full");
             return;
         }
         doubleStack();
         array[++top] = data;
+        System.out.println("top:"+top+"---data:"+data);
 
     }
     public int pop(){
         if(isEmpty()){
             System.out.println("stack empty");
-            return 0;
+            throw new EmptyStackException();
         }else{
             return array[top--];
         }
@@ -38,5 +41,10 @@ public class DynArrayStack {
         System.arraycopy(array,0,newArray,0,capacity);
         capacity = capacity*2;
         array = newArray;
+    }
+    public void printAll(){
+        while(top != -1){
+            System.out.println(pop());
+        }
     }
 }

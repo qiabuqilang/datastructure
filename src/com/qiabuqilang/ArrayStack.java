@@ -1,5 +1,7 @@
 package com.qiabuqilang;
 
+import java.util.EmptyStackException;
+
 public class ArrayStack {
     private int top;
     private int capacity;
@@ -25,16 +27,16 @@ public class ArrayStack {
 
         } else {
             array[++top] = data;
+            System.out.println("top:"+top+"---data:"+data);
         }
 
     }
 
     public int pop() {
         if (isEmpty()) {
-            System.out.println("stack empty");
-            return 0;
+           throw new EmptyStackException();
         } else {
-            return array[--top];
+            return array[top--];
         }
     }
 
@@ -42,4 +44,33 @@ public class ArrayStack {
         top = -1;
     }
 
+    public void printAll(){
+        while(top != -1){
+            System.out.println(pop());
+        }
+    }
+
+    public int getTop() {
+        return top;
+    }
+
+    public void setTop(int top) {
+        this.top = top;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public int[] getArray() {
+        return array;
+    }
+
+    public void setArray(int[] array) {
+        this.array = array;
+    }
 }

@@ -19,8 +19,8 @@ public class LNStack {
         }
     }
     public int top(){
-        if(headNode ==null){
-            return -1;
+        if(isEmpty()){
+            throw new EmptyStackException();
         }
         return headNode.getData();
     }
