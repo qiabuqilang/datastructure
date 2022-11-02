@@ -85,7 +85,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../leetcode" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="leetcode.id" />
   </component>
   <component name="RunManager" selected="Application.LNQueueTest">
@@ -181,6 +181,8 @@
       <workItem from="1667006411399" duration="3668000" />
       <workItem from="1667197572603" duration="9851000" />
       <workItem from="1667265017840" duration="3877000" />
+      <workItem from="1667356786826" duration="3249000" />
+      <workItem from="1667373993188" duration="1976000" />
     </task>
     <servers />
   </component>
