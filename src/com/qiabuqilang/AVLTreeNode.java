@@ -98,4 +98,7 @@ public class AVLTreeNode {
         root.setHeight(Math.max(height(root.getLeft()),height(root.getRight())+1));
         return root;
     }
+
+
+
 }
