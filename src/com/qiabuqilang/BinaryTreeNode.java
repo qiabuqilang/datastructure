@@ -33,7 +33,7 @@ public class BinaryTreeNode {
 
     public void setRight(BinaryTreeNode right) {
         this.right = right;
-    }\
+    }
 
     //前序遍历
     public void preOrder(BinaryTreeNode root){
@@ -206,5 +206,5 @@ public class BinaryTreeNode {
     }
 
     //层次遍历查找最大
-   
+
 }

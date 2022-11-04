@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c6515fda-8c33-4ac6-ba51-76252606fd0b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/qiabuqilang/BinaryTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/qiabuqilang/BinaryTreeNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +183,8 @@
       <workItem from="1667197572603" duration="9851000" />
       <workItem from="1667265017840" duration="3877000" />
       <workItem from="1667356786826" duration="3249000" />
-      <workItem from="1667373993188" duration="1976000" />
+      <workItem from="1667373993188" duration="2138000" />
+      <workItem from="1667526852413" duration="598000" />
     </task>
     <servers />
   </component>
